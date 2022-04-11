@@ -105,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
               postData();
             },
           ),
+          Divider(color: Colors.black54),
           Expanded(
             flex: 1,
             child: ListView.builder(
