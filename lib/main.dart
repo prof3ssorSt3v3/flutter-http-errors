@@ -94,13 +94,23 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           TextButton(
-            child: const Text('Get Bad Data'),
+            child: const Text(
+              'Get Bad Data',
+              style: TextStyle(
+                color: Colors.red,
+              ),
+            ),
             onPressed: () {
               failToGetMyData();
             },
           ),
           TextButton(
-            child: const Text('Do a Data POST'),
+            child: const Text(
+              'Do a Data POST',
+              style: TextStyle(
+                color: Colors.purple,
+              ),
+            ),
             onPressed: () {
               postData();
             },
