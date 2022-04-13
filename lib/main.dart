@@ -29,6 +29,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List users = []; //we will populate this with the API call
 
+  @override
+  initState() {
+    super.initState();
+    //set a new value for users
+    //we could make the http request here...
+    setState(() {
+      users = [
+        {'id': 117, 'name': 'From Init State One'},
+        {'id': 118, 'name': 'Init State Two'},
+        {'id': 119, 'name': 'State of the Init Three'},
+      ];
+    });
+  }
+
   void failToGetMyData() async {
     try {
       List data = await API.failGetData();
